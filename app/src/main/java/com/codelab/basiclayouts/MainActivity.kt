@@ -102,7 +102,8 @@ fun AlignYourBodyElement(
         )
         Text(text = stringResource(text),
         modifier = Modifier.paddingFromBaseline(top = 24.dp, bottom = 8.dp),
-        
+        style = MaterialTheme.typography.bodyMedium
+        )
     }
 }
 
@@ -208,6 +209,8 @@ fun SearchBarPreview() {
 fun AlignYourBodyElementPreview() {
     MySootheTheme {
         AlignYourBodyElement(
+            text = R.string.ab1_inversions,
+            drawable = R.drawable.ab1_inversions,
             modifier = Modifier.padding(8.dp)
         )
     }
